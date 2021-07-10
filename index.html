@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dữ liệu covid-19</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header">
+          <div class="header_logo">
+            <a href="#" class="logo_link">
+              <i class="uil uil-shield-question logo_img"></i>
+              <span>Covid19Data</span>
+            </a>
+          </div>
+          <div class="header_menu">
+            <ul class="menu_list">
+              <li class="menu_item">
+                <a href="#" class="menu_link">Tài liệu</a>
+              </li>
+              <li class="menu_item">
+                <a href="#footer" class="menu_link">Liên hệ</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="menu_link">Thông tin covid toàn cầu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="data_home">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-sm-12">
+            <div class="header_n">
+              <h1>COVID-19 Datacenter</h1>
+              <p>
+                Theo dõi tình trạng covid-19 tại:
+                <span class="header-title"></span>
+              </p>
+              <select name="" id="select_world"></select>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Mã quốc gia</th>
+                    <th scope="col">Quốc gia</th>
+                    <th scope="col">Dân số</th>
+                    <th scope="col">Bị nhiễm</th>
+                    <th scope="col">Tử vong</th>
+                    <th scope="col">Cập nhật gần nhất</th>
+                    <th scope="col">% Tử vong</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="maqg"></td>
+                    <td class="quocgia"></td>
+                    <td class="danso"></td>
+                    <td class="binhiem"></td>
+                    <td class="tuvong"></td>
+                    <td class="lastupdate"></td>
+                    <td class="pttuvong"></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="error"></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <h3>Theo dõi tình trạng covid-19 trên toàn thế giới</h3>
+              <div id="total"></div>
+              <div id="total-die"></div>
+              <div id="total-success"></div>
+              <span class="list-name"></span>
+              <div class="list_scroll">
+                <ul class="wrapper"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer_info" id="footer">
+          <a href="#">Coppyright © 2020. Design by: NhatNguyen</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="allert">
+      <h4 class="allert_content">
+        Hiện tại ứng dụng không hỗ trợ cho thiết bị của bạn. <br />Vui lòng truy
+        cập lại bằng pc.
+      </h4>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
